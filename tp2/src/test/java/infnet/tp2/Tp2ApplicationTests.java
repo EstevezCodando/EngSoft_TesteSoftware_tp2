@@ -12,6 +12,7 @@ class MathFunctionsPropriedadesTest {
     @Property
     boolean deveDobrarCorretamente(@ForAll int numero) {
         int resultado = MathFunctions.multiplyByTwo(numero);
-        return resultado == numero * 2;
+        int esperado = numero + numero;
+        return resultado == esperado;
     }
 }
